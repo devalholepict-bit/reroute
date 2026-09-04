@@ -1,0 +1,18 @@
+{
+  "name": "reroute",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ReRoute - Payment-Failure Recovery Agent",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "dev:ml": "cd ml-service && venv\\Scripts\\python app.py",
+    "test": "npm --prefix server test && npm --prefix client test",
+    "test:server": "npm --prefix server test",
+    "test:client": "npm --prefix client test",
+    "test:ml": "cd ml-service && venv\\Scripts\\pytest",
+    "db:reset": "node scripts/reset-db.js",
+    "db:seed": "node scripts/seed-demo-data.js",
+    "db:policies": "node scripts/seed-policies.js"
+  }
+}

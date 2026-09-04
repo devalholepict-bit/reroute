@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "scripts": {
+    "reset": "node reset-db.js",
+    "seed": "node seed-demo-data.js",
+    "seed:policies": "node seed-policies.js"
+  }
+}

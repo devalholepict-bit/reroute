@@ -1,0 +1,25 @@
+{
+  "name": "reroute-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch-path=src src/index.js",
+    "start": "node src/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit",
+    "test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/unit --forceExit",
+    "test:integration": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/integration --forceExit",
+    "test:e2e": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/integration/e2e-flow.test.js --forceExit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "jest": "^30.5.0",
+    "mongodb-memory-server": "^11.2.0",
+    "supertest": "^7.2.2"
+  }
+}
